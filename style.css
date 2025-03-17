@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+html, body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;             /* Enable Flexbox */
+    flex-direction: column;    /* Arrange the headers in a vertical column */
+    justify-content: center;   /* Vertically center the content */
+    align-items: center;       /* Horizontally center the content */
+    height: 100vh;             /* Make the div take up the full viewport height */
+    text-align: center;        /* Optional: center the text within the headers */
+}
+
+h1, h3 {
+    margin: 10px 0;            /* Add space between headers */
+}
