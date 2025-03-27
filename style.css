@@ -22,6 +22,24 @@ a:hover {
     text-align: center;        /* Optional: center the text within the headers */
 }
 
+.stafflgn, .getallaccs {
+    border: none; /* Keep border 0 */
+    padding: 10px 20px; /* Add some padding for a better look */
+    background-color: #007bff; /* Nice blue background */
+    color: white; /* White text */
+    font-size: 16px; /* Good readable font size */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Smooth shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.stafflgn:hover, .getallaccs:hover {
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+
 h1, h3 {
     margin: 10px 0;            /* Add space between headers */
 }
