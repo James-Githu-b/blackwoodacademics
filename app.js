@@ -1,5 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector(".stafflgn");
+    const viewallaccs = document.querySelector(".viewallaccs");
+
+    function getCookie(name) {
+        const cookies = document.cookie.split("; ");
+        for (let cookie of cookies) {
+            const [key, value] = cookie.split("=");
+            if (key === name) return value;
+        }
+        return null;
+    }
 
     if (button) {
         button.addEventListener("click", function () {
@@ -17,6 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     
                     console.log("Cookie SLT set!");
                 }
+            }
+        });
+    }
+
+    if (viewallaccs) {
+        viewallaccs.addEventListener("click", function() {
+            console.log("Attempted viewallaccs");
+            const sltValue = getCookie("SLT");
+
+            if (sltValue === "ss87s898ssjj38djk98s") {
+                alert("The only combo is the first name Adam and the password Kubera"); // User is authenticated
+            } else {
+                alert("You are not logged in. Log in to continue."); // User is NOT authenticated
             }
         });
     }
