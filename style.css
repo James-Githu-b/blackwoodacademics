@@ -22,7 +22,7 @@ a:hover {
     text-align: center;        /* Optional: center the text within the headers */
 }
 
-.stafflgn, .getallaccs {
+.stafflgn, .viewallaccs {
     border: none; /* Keep border 0 */
     padding: 10px 20px; /* Add some padding for a better look */
     background-color: #007bff; /* Nice blue background */
@@ -34,7 +34,7 @@ a:hover {
     cursor: pointer; /* Show pointer on hover */
 }
 
-.stafflgn:hover, .getallaccs:hover {
+.stafflgn:hover, .viewallaccs:hover {
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
     transform: translateY(-2px); /* Slight lift effect */
 }
